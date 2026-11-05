@@ -1,0 +1,36 @@
+.page { max-width: 760px; margin: 0 auto; padding: 48px 20px; }
+header h1 { font-size: 2.2rem; letter-spacing: -0.03em; margin: 0 0 6px; }
+header p { color: #6b645a; margin: 0 0 32px; }
+
+.liste { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px; }
+.carte { display: flex; justify-content: space-between; align-items: center; gap: 16px; background: #fbf9f4; border: 1px solid #e2ddd0; border-radius: 16px; padding: 18px 22px; }
+.carte h2 { font-size: 1.05rem; margin: 0 0 4px; }
+.entreprise { color: #6b645a; margin: 0; font-size: 0.9rem; }
+.droite { display: flex; flex-direction: column; align-items: flex-end; gap: 6px; }
+.badge { background: #e0623a; color: white; border-radius: 999px; padding: 4px 12px; font-size: 0.8rem; font-weight: 600; }
+.date { color: #6b645a; font-size: 0.8rem; }
+.vide { text-align: center; color: #6b645a; padding: 32px; }
+
+.formulaire { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; background: #fbf9f4; border: 1px solid #e2ddd0; border-radius: 16px; padding: 18px; margin-bottom: 28px; }
+.formulaire input, .formulaire select { padding: 10px 14px; border: 1px solid #e2ddd0; border-radius: 10px; background: white; font: inherit; }
+.formulaire .large { grid-column: 1 / -1; }
+.formulaire button { grid-column: 1 / -1; padding: 12px; border: 0; border-radius: 999px; background: #1a1714; color: #f4f1ea; font: inherit; font-weight: 600; cursor: pointer; }
+.formulaire button:hover { background: #33291f; }
+
+@media (max-width: 600px) { .formulaire { grid-template-columns: 1fr; } }
+
+.carte { position: relative; }
+.statut { appearance: none; background: #e0623a; color: white; border: 0; border-radius: 999px; padding: 4px 14px; font: inherit; font-size: 0.8rem; font-weight: 600; cursor: pointer; text-align: center; }
+.supprimer { position: absolute; top: 8px; right: 12px; border: 0; background: none; color: #b9b0a3; font-size: 0.85rem; cursor: pointer; }
+.supprimer:hover { color: #e0623a; }
+.carte .droite { margin-right: 18px; }
+
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 20px; }
+.stat { background: #fbf9f4; border: 1px solid #e2ddd0; border-radius: 16px; padding: 16px; display: flex; flex-direction: column; gap: 4px; font-size: 0.82rem; color: #6b645a; }
+.stat .chiffre { font-size: 1.7rem; font-weight: 800; color: #1a1714; letter-spacing: -0.03em; }
+
+.filtres { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+.filtres button { border: 1px solid #e2ddd0; background: #fbf9f4; border-radius: 999px; padding: 6px 16px; font: inherit; font-size: 0.85rem; cursor: pointer; }
+.filtres button.actif { background: #1a1714; color: #f4f1ea; border-color: #1a1714; }
+
+@media (max-width: 600px) { .stats { grid-template-columns: repeat(2, 1fr); } }
